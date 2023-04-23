@@ -5,7 +5,7 @@ This project aims to build a financial planning tool prototype for a large credi
 
 
 ## Technologies
-**Python Pandas Libraries**
+**Python Libraries**
 
 `python 3.9.12`<br>
 `python-dotenv` 1.0<br>
@@ -17,10 +17,16 @@ This project aims to build a financial planning tool prototype for a large credi
 
 
 ## Installation Guide
+
+[Install anaconda](https://www.anaconda.com/download/)
+
 To clone and run this application, you'll need Git installed on your computer.
 From your command line:
 ```
-# Install dependencies
+#Create a new conda environment
+conda create -n your_env_name python=3.8
+
+# Install dependencies in conda environment
 pip install jupyter lab
 conda install -c anaconda requests
 conda install -c jmcmurray json
@@ -30,10 +36,10 @@ pip install alpaca-trade-api
 # Clone this repository
 git clone https://github.com/AlexanderValenzuela/financial_planning
 
-# Go into the repository
-cd financial_planning
+# Activate conda environment
+conda activate your_env_name
 
-# In your environment, run Jupyter Lab
+# In the conda environment, run Jupyter Lab
 jupyter lab 
 ```
 ---
